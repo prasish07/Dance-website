@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title hello
+    block scripts
+    block style
+  body
+    nav#navbar 
+      ul 
+        #logo 
+          img(src="/static/images/1.png", alt="")
+          | HDA
+        li #[a(href='/') Home]
+        li #[a(href='/contact') Contact us]
+        li #[a(href='/') Services]
+        li #[a(href='/') Join us]
+
+    block content
+    footer#footer 
+      | Copyright © 2022

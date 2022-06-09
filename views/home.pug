@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js') 
+
+block style 
+    style
+      include  ../static/style.css
+
+block content 
+
+
+    section#introSection
+      div Welcome to our newly build world class dance acedemy
+      div.small Hope you have a nice time staying and practicing here.
+
+    section#missionSection 
+      h2 Our mission
+      .card 
+        h3 Dance perfection
+        .card-box 
+          .card-img
+            img(src="/static/images/2.png", alt="")
+          .card-contain 
+            p This is the best dance acedemy
+      .card 
+        h3 Dance the way you like
+        .card-box 
+          .card-img
+            img(src="/static/images/3.png", alt="")
+          .card-contain 
+            p This is the best dance acedemy
+      .card 
+        h3 Expert teaching
+        .card-box 
+          .card-img
+            img(src="/static/images/4.png", alt="")
+          .card-contain 
+            p This is the best dance acedemy
+
+    section#sponsorSection
+      h2 Our spnonsors 
+      .sponsors 
+        img(src="/static/images/logo.png", alt="no images found")
+        img(src="/static/images/logo1.png", alt="no images found")
+        img(src="/static/images/logo2.png", alt="no images found")
+        img(src="/static/images/logo3.png", alt="no images found")
+
+
+    section#contact
+      input(type="text" name="name" id ="name" placeholder= "Enter your name")
+  
