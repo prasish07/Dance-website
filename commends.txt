@@ -1,0 +1,9 @@
+touch .gitignore
+git config --global user.name prasish
+git config --global user.email prasishshrestha0099@gmail.com
+git init
+git add .
+git commit -m "Initial commit"
+git status
+git remote add origin <add ssh>
+git push origin master

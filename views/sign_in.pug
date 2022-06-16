@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+    script(src="https://kit.fontawesome.com/ec45fc90e5.js")  
+
+block style 
+    style
+      include  ../static/style.css
+      include  ../static/index.css
+
+block content 
+     div.container
+        h1 Sign in
+        form(action="/signin",method = "post", class='signin') 
+            div.box
+                i.fa-solid.fa-envelope
+                input(type="email" name= "email" class= "email" placeholder="Enter your email")
+            div.box
+                i.fa-solid.fa-lock
+                input(type="password" name= "password" class= "password" placeholder="Enter your password")
+            button(class="btn")
+                | Submit
